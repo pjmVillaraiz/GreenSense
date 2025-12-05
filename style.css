@@ -183,11 +183,21 @@ nav {
     animation: float 3s ease-in-out infinite;
 }
 
+
 .hero-image img {
     width: 100%;
     max-width: 500px;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
 }
+/* Make hero SVG responsive */
+.hero-image svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
@@ -602,4 +612,5 @@ footer {
     .section-header h2 {
         font-size: 2rem;
     }
+
 }
